@@ -95,8 +95,11 @@ class BaseScraper:
         return sorted_products, sorted_scores
 
     def login(self, headless=False, playwright=None, selenium=False):
-        ip_address = requests.get('https://api.ipify.org').text
-        print(f"Public IP Address: {ip_address}")
+        try:
+            ip_address = requests.get('https://api.ipify.org', timeout=5).text
+            print(f"Public IP Address: {ip_address}")
+        except Exception as e:
+            print(f"Could not retrieve public IP address: {e}")
 
         # Set up fake user agent
         ua = UserAgent()

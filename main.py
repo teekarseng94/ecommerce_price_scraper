@@ -1,4 +1,18 @@
 import os
+import sys
+from dotenv import load_dotenv
+
+# Ensure UTF-8 output encoding for console prints (especially on Windows)
+if sys.platform.startswith('win'):
+    try:
+        sys.stdout.reconfigure(encoding='utf-8')
+        sys.stderr.reconfigure(encoding='utf-8')
+    except AttributeError:
+        pass
+
+# Load environment variables
+load_dotenv()
+
 from scraper_jd import JDScraper
 from scraper_taobao import TaobaoScraper
 from scraper_tmall import TmallScraper
@@ -25,6 +39,14 @@ def main(prefix, sleep_time, headless, platforms):
 
     if not os.path.exists(save_dir):
         os.makedirs(save_dir)
+
+    # Check if OpenAI key is present for GPT filtering
+    openai_key = os.getenv('OPENAI_KEY')
+    use_gpt = 1
+    if not openai_key:
+        print("Warning: OPENAI_KEY is not set in the environment. Running without GPT filtering (use_gpt=0).")
+        use_gpt = 0
+
     platform_classes = {'jd': JDScraper, 'taobao': TaobaoScraper, 'tmall': TmallScraper}
     platforms = [platform_classes[p](sleep_time=sleep_time, products_limit=5) for p in platforms]
 
@@ -52,7 +74,7 @@ def main(prefix, sleep_time, headless, platforms):
                 print(f"{df_path} already scraped")
                 continue
             product_dict = platform.scrape_product_info_by_weight(
-                product_name, use_gpt=1, verbose=1, headless=headless)
+                product_name, use_gpt=use_gpt, verbose=1, headless=headless)
             if len(product_dict) == 0:
                 print(f'No suitable items found for {product_name}')
                 df = pd.DataFrame()
