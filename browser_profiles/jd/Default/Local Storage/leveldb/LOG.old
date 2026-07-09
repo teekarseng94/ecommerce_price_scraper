@@ -1,0 +1,20 @@
+2026/07/09-13:31:16.206 de50 Reusing MANIFEST C:\Users\Acer\Desktop\SaaS\ecommerce_price_scraper\browser_profiles\jd\Default\Local Storage\leveldb/MANIFEST-000001
+2026/07/09-13:31:16.214 de50 Recovering log #4
+2026/07/09-13:31:16.219 de50 Reusing old log C:\Users\Acer\Desktop\SaaS\ecommerce_price_scraper\browser_profiles\jd\Default\Local Storage\leveldb/000004.log 
+2026/07/09-13:32:16.233 8de8 Level-0 table #7: started
+2026/07/09-13:32:16.238 8de8 Level-0 table #7: 71301 bytes OK
+2026/07/09-13:32:16.244 8de8 Delete type=0 #4
+2026/07/09-13:33:30.486 8de8 Level-0 table #9: started
+2026/07/09-13:33:30.491 8de8 Level-0 table #9: 61160 bytes OK
+2026/07/09-13:33:30.495 8de8 Delete type=0 #6
+2026/07/09-13:33:58.760 8de8 Level-0 table #11: started
+2026/07/09-13:33:58.770 8de8 Level-0 table #11: 67158 bytes OK
+2026/07/09-13:33:58.776 8de8 Delete type=0 #8
+2026/07/09-13:33:58.777 8de8 Compacting 4@0 + 0@1 files
+2026/07/09-13:33:58.785 8de8 Generated table #12@0: 181 keys, 237296 bytes
+2026/07/09-13:33:58.785 8de8 Compacted 4@0 + 0@1 files => 237296 bytes
+2026/07/09-13:33:58.788 8de8 compacted to: files[ 0 1 0 0 0 0 0 ]
+2026/07/09-13:33:58.790 8de8 Delete type=2 #3
+2026/07/09-13:33:58.790 8de8 Delete type=2 #7
+2026/07/09-13:33:58.790 8de8 Delete type=2 #9
+2026/07/09-13:33:58.790 8de8 Delete type=2 #11

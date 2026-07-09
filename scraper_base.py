@@ -14,6 +14,16 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
+# A stable desktop Chrome user-agent. Some sites (e.g. JD) serve a MOBILE page
+# to random mobile user-agents, and the mobile page does not have the desktop
+# product selectors (.gl-item), so scraping returns 0 products. Pinning this
+# desktop user-agent makes those sites always return the desktop layout.
+DESKTOP_USER_AGENT = (
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+    "(KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36"
+)
+
+
 class BaseScraper:
     def __init__(self, products_limit=10, sleep_time=0):
         self.limit = products_limit
@@ -94,17 +104,23 @@ class BaseScraper:
         sorted_products = [product_score['product'] for product_score in sorted_product_scores]
         return sorted_products, sorted_scores
 
-    def login(self, headless=False, playwright=None, selenium=False):
+    def login(self, headless=False, playwright=None, selenium=False, force_desktop_ua=False):
         try:
             ip_address = requests.get('https://api.ipify.org', timeout=5).text
             print(f"Public IP Address: {ip_address}")
         except Exception as e:
             print(f"Could not retrieve public IP address: {e}")
 
-        # Set up fake user agent
-        ua = UserAgent()
-        userAgent = ua.random
-        print(userAgent)
+        # Choose a user agent. When force_desktop_ua=True we pin a stable desktop
+        # Chrome user-agent (see DESKTOP_USER_AGENT above) so the site always
+        # returns its desktop layout. Otherwise we use a random user-agent.
+        if force_desktop_ua:
+            userAgent = DESKTOP_USER_AGENT
+            print(f'Using stable desktop user-agent: {userAgent}')
+        else:
+            ua = UserAgent()
+            userAgent = ua.random
+            print(userAgent)
 
         if not os.path.isfile(self.cookies_path):
             print('Cookie not detected, please login to save cookies')

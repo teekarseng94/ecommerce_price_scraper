@@ -9,3 +9,4 @@ playwright-stealth==1.0.6
 pandas
 setuptools<82
 openpyxl
+streamlit

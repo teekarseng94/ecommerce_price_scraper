@@ -1,0 +1,56 @@
+2026/07/09-14:21:57.056 ec90 Creating DB C:\Users\Acer\Desktop\SaaS\ecommerce_price_scraper\browser_profiles\jd_manual\Default\Session Storage since it was missing.
+2026/07/09-14:21:57.074 ec90 Reusing MANIFEST C:\Users\Acer\Desktop\SaaS\ecommerce_price_scraper\browser_profiles\jd_manual\Default\Session Storage/MANIFEST-000001
+2026/07/09-14:23:46.517 d7a0 Level-0 table #5: started
+2026/07/09-14:23:46.529 d7a0 Level-0 table #5: 125737 bytes OK
+2026/07/09-14:23:46.534 d7a0 Delete type=0 #3
+2026/07/09-14:24:14.925 d7a0 Level-0 table #7: started
+2026/07/09-14:24:14.930 d7a0 Level-0 table #7: 20601 bytes OK
+2026/07/09-14:24:14.935 d7a0 Delete type=0 #4
+2026/07/09-14:24:45.528 d7a0 Level-0 table #9: started
+2026/07/09-14:24:45.537 d7a0 Level-0 table #9: 21115 bytes OK
+2026/07/09-14:24:45.542 d7a0 Delete type=0 #6
+2026/07/09-14:35:28.942 ec90 Level-0 table #11: started
+2026/07/09-14:35:28.951 ec90 Level-0 table #11: 117682 bytes OK
+2026/07/09-14:35:28.956 ec90 Delete type=0 #8
+2026/07/09-14:36:10.395 d7a0 Level-0 table #13: started
+2026/07/09-14:36:10.412 d7a0 Level-0 table #13: 20567 bytes OK
+2026/07/09-14:36:10.418 d7a0 Delete type=0 #10
+2026/07/09-14:36:47.627 d7a0 Level-0 table #15: started
+2026/07/09-14:36:47.639 d7a0 Level-0 table #15: 22105 bytes OK
+2026/07/09-14:36:47.644 d7a0 Delete type=0 #12
+2026/07/09-14:36:47.645 d7a0 Compacting 4@0 + 1@1 files
+2026/07/09-14:36:47.657 d7a0 Generated table #16@0: 61 keys, 201273 bytes
+2026/07/09-14:36:47.657 d7a0 Compacted 4@0 + 1@1 files => 201273 bytes
+2026/07/09-14:36:47.661 d7a0 compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/07/09-14:36:47.663 d7a0 Delete type=2 #7
+2026/07/09-14:36:47.663 d7a0 Delete type=2 #9
+2026/07/09-14:36:47.664 d7a0 Delete type=2 #11
+2026/07/09-14:36:47.664 d7a0 Delete type=2 #13
+2026/07/09-14:36:47.664 d7a0 Delete type=2 #15
+2026/07/09-14:57:04.617 d7a0 Level-0 table #18: started
+2026/07/09-14:57:04.634 d7a0 Level-0 table #18: 28663 bytes OK
+2026/07/09-14:57:04.638 d7a0 Delete type=0 #14
+2026/07/09-14:57:50.937 ec90 Level-0 table #20: started
+2026/07/09-14:57:50.943 ec90 Level-0 table #20: 20417 bytes OK
+2026/07/09-14:57:50.946 ec90 Delete type=0 #17
+2026/07/09-15:13:41.944 d7a0 Level-0 table #22: started
+2026/07/09-15:13:41.952 d7a0 Level-0 table #22: 29025 bytes OK
+2026/07/09-15:13:41.956 d7a0 Delete type=0 #19
+2026/07/09-15:14:13.073 ec90 Level-0 table #24: started
+2026/07/09-15:14:13.081 ec90 Level-0 table #24: 21041 bytes OK
+2026/07/09-15:14:13.084 ec90 Delete type=0 #21
+2026/07/09-15:14:13.085 ec90 Compacting 4@0 + 1@1 files
+2026/07/09-15:14:13.096 ec90 Generated table #25@0: 143 keys, 299433 bytes
+2026/07/09-15:14:13.096 ec90 Compacted 4@0 + 1@1 files => 299433 bytes
+2026/07/09-15:14:13.098 ec90 compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/07/09-15:14:13.099 ec90 Delete type=2 #16
+2026/07/09-15:14:13.099 ec90 Delete type=2 #18
+2026/07/09-15:14:13.099 ec90 Delete type=2 #20
+2026/07/09-15:14:13.099 ec90 Delete type=2 #22
+2026/07/09-15:14:13.099 ec90 Delete type=2 #24
+2026/07/09-15:16:07.479 d7a0 Level-0 table #27: started
+2026/07/09-15:16:07.488 d7a0 Level-0 table #27: 28638 bytes OK
+2026/07/09-15:16:07.492 d7a0 Delete type=0 #23
+2026/07/09-15:16:38.902 d7a0 Level-0 table #29: started
+2026/07/09-15:16:38.910 d7a0 Level-0 table #29: 21030 bytes OK
+2026/07/09-15:16:38.913 d7a0 Delete type=0 #26

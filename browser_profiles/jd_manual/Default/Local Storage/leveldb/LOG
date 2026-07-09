@@ -1,0 +1,11 @@
+2026/07/09-14:21:54.729 ec90 Creating DB C:\Users\Acer\Desktop\SaaS\ecommerce_price_scraper\browser_profiles\jd_manual\Default\Local Storage\leveldb since it was missing.
+2026/07/09-14:21:54.790 ec90 Reusing MANIFEST C:\Users\Acer\Desktop\SaaS\ecommerce_price_scraper\browser_profiles\jd_manual\Default\Local Storage\leveldb/MANIFEST-000001
+2026/07/09-14:24:21.463 d7a0 Level-0 table #5: started
+2026/07/09-14:24:21.467 d7a0 Level-0 table #5: 111847 bytes OK
+2026/07/09-14:24:21.473 d7a0 Delete type=0 #3
+2026/07/09-15:15:41.843 d7a0 Level-0 table #7: started
+2026/07/09-15:15:41.852 d7a0 Level-0 table #7: 32292 bytes OK
+2026/07/09-15:15:41.857 d7a0 Delete type=0 #4
+2026/07/09-15:19:03.516 d7a0 Level-0 table #9: started
+2026/07/09-15:19:03.523 d7a0 Level-0 table #9: 30249 bytes OK
+2026/07/09-15:19:03.527 d7a0 Delete type=0 #6
